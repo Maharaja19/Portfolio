@@ -2,10 +2,10 @@
 
 A world-class, premium, and production-ready React portfolio designed with modern aesthetics (Google/Stripe/OpenAI level). It features high-fidelity smooth transitions, custom interactive case studies, dynamic API explorers, live GitHub/LeetCode sync modules, and a global documents center.
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-emerald?style=for-the-badge&logo=vercel&logoColor=white)](https://Maharaja19.github.io/portfolio/)
-[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-blue?style=for-the-badge&logo=github)](https://github.com/Maharaja19/Maharaja19)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-emerald?style=for-the-badge&logo=vercel&logoColor=white)](https://Maharaja19.github.io/Portfolio/)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-blue?style=for-the-badge&logo=github)](https://github.com/Maharaja19/Portfolio)
 [![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)](LICENSE)
-[![Last Updated](https://img.shields.io/badge/Last_Updated-July_2026-orange?style=for-the-badge)](https://github.com/Maharaja19/Maharaja19/commits/main)
+[![Last Updated](https://img.shields.io/badge/Last_Updated-July_2026-orange?style=for-the-badge)](https://github.com/Maharaja19/Portfolio/commits/main)
 
 ---
 
@@ -117,7 +117,7 @@ portfolio/
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/Maharaja19/Maharaja19.git
+git clone https://github.com/Maharaja19/Portfolio.git
 cd portfolio
 ```
 
@@ -150,7 +150,7 @@ The application features a pre-configured automation script. When you push to th
 
 1. Push your local files to your GitHub repository:
    ```bash
-   git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+   git remote add origin https://github.com/Maharaja19/Portfolio.git
    git branch -M main
    git push -u origin main
    ```
@@ -217,7 +217,7 @@ Open `src/data/portfolioData.js` and update URLs within the `personalDetails` bl
 
 ## 📨 Contact Connections
 
-* **Website**: [Maharaja Portfolio](https://Maharaja19.github.io/portfolio/)
+* **Website**: [Maharaja Portfolio](https://Maharaja19.github.io/Portfolio/)
 * **LinkedIn**: [Maharaja Murugakumar](https://www.linkedin.com/in/maharaja-murugakumar)
 * **GitHub**: [@Maharaja19](https://github.com/Maharaja19)
 * **LeetCode**: [@raja_19](https://leetcode.com/u/raja_19/)
