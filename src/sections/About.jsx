@@ -64,7 +64,7 @@ export default function About() {
               <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 blur opacity-60 group-hover:opacity-100 transition duration-1000 group-hover:duration-200" />
               <div className="relative rounded-2xl overflow-hidden glass-card aspect-square max-w-[280px]">
                 <img
-                  src="/images/profile/Maharaja.jpeg"
+                  src="images/profile/Maharaja.jpeg"
                   alt={personalDetails.name}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
@@ -89,7 +89,7 @@ export default function About() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
               <div className="p-4 rounded-xl glass-card flex items-start space-x-3">
                 <img
-                  src="/images/college/college.png"
+                  src="images/college/college.png"
                   alt="Government College of Technology"
                   className="w-10 h-10 object-contain mt-0.5 rounded-lg flex-shrink-0 bg-white dark:bg-slate-900 p-0.5 border border-slate-200/20"
                 />

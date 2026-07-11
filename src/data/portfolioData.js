@@ -10,8 +10,10 @@ export const personalDetails = {
   location: "Tamil Nadu, India",
   email: "m.maharaja1964@gmail.com",
   github: "https://github.com/Maharaja19",
-  linkedin: "https://www.linkedin.com/in/maharaja-murugakumar",
-  resumeUrl: "/documents/resume/Maharaja_resume.pdf",
+  linkedin: "https://www.linkedin.com/in/maharaja-murugakumar-53722428b/",
+  leetcode: "https://leetcode.com/u/raja_19/",
+  hackerrank: "https://www.hackerrank.com/profile/m_maharaja1964",
+  resumeUrl: "documents/resume/Maharaja_resume.pdf",
   education: {
     institution: "Government College of Technology",
     degree: "Bachelor of Engineering",
@@ -265,11 +267,11 @@ export const experienceData = [
   {
     company: "Bluekode",
     role: "Data Analyst Intern",
-    period: "May 2026 - June 2026",
+    period: "April 2026 - May 2026",
     logoPlaceholder: "BK",
-    experienceCertificate: "/documents/internship/internship-certificate.pdf",
-    experienceLetter: "/documents/internship/experience-letter.pdf",
-    internPhoto: "/documents/internship/intern-photo.png",
+    experienceCertificate: "documents/internship/internship-certificate.pdf",
+    experienceLetter: "documents/internship/experience-letter.pdf",
+    internPhoto: "documents/internship/intern-photo.png",
     description: "Collaborated with business units to analyze system logs and operational metrics. Cleaned and structured messy transactional records, translating raw datasets into visual business solutions.",
     skills: ["SQL", "Excel", "Power BI", "Data Cleaning", "Dashboard Development", "Business Analytics"],
     achievements: [
@@ -278,7 +280,7 @@ export const experienceData = [
       "Performed data cleansing on a customer database containing over 50,000 records, correcting schema anomalies and removing duplicates"
     ],
     gallery: [
-      "/documents/internship/intern-photo.png",
+      "documents/internship/intern-photo.png",
       "images/voting/dashboard.svg"
     ]
   }
@@ -288,8 +290,8 @@ export const incubationData = {
   title: "DCKAP Incubation Centre",
   highlight: "Selected for DCKAP Incubation Centre through a competitive multi-stage evaluation.",
   project: "Smart Play Bank AI",
-  selectionLetter: "/documents/achievements/dckap-incubation.pdf",
-  incubationCertificate: "/documents/achievements/dckap-incubation.pdf",
+  selectionLetter: "documents/achievements/dckap-incubation.pdf",
+  incubationCertificate: "documents/achievements/dckap-incubation.pdf",
   overview: "Smart Play Bank AI teaches financial literacy to children via virtual simulations, parent analytics, and rewarding gameplay levels.",
   research: "Identified that over 80% of teenagers lack fundamental personal finance knowledge. Market research validated that parents wanted a gamified, safe sandbox ledger to manage real-life allowances and chore completions.",
   validation: "Pitched to the DCKAP executive evaluation board and was selected as one of the incubated student projects, receiving funding allocations and industry expert mentorship pipelines.",
@@ -307,7 +309,7 @@ export const leadershipData = [
   {
     role: "Treasurer",
     organization: "Computer Science Engineering Association (CSEA)",
-    period: "2024 - 2025",
+    period: "2025",
     description: "Led financial planning, sponsorships, and budgeting for various academic symposiums, tech festivals, and department initiatives.",
     stats: "Allocated budget for 10+ department events, coordinated with 15+ external sponsors.",
     achievements: [
@@ -319,7 +321,7 @@ export const leadershipData = [
   {
     role: "Treasurer",
     organization: "Literary Debating Society (LDS)",
-    period: "2023 - 2024",
+    period: "2026",
     description: "Oversaw finances and managed resources for club debates, inter-collegiate tournaments, and guest speaker lectures.",
     stats: "Managed allocations for 5 inter-college debating events, increasing student turnout by 35%.",
     achievements: [
@@ -340,7 +342,7 @@ export const certificationData = [
     date: "2024",
     skills: ["DevOps", "Git", "CI/CD", "Software Development Lifecycle", "Containers", "Linux", "Cloud Computing"],
     theme: "from-blue-600 to-indigo-900",
-    pdfPath: "/documents/certificates/ibm-devops.pdf",
+    pdfPath: "documents/certificates/ibm-devops.pdf",
     thumbnail: "images/certificates/placeholder.svg",
     verifyUrl: "https://github.com/Maharaja19"
   },
@@ -353,7 +355,7 @@ export const certificationData = [
     date: "2024",
     skills: ["Cloud", "Virtualization", "IaaS", "PaaS", "SaaS", "Cloud Deployment", "Cloud Architecture"],
     theme: "from-sky-500 to-blue-700",
-    pdfPath: "/documents/certificates/ibm-cloud.pdf",
+    pdfPath: "documents/certificates/ibm-cloud.pdf",
     thumbnail: "images/certificates/placeholder.svg",
     verifyUrl: "https://github.com/Maharaja19"
   },
@@ -366,7 +368,7 @@ export const certificationData = [
     date: "2024",
     skills: ["Java", "Backend Development", "REST APIs", "Software Engineering", "Debugging", "Financial Technology"],
     theme: "from-slate-900 via-indigo-950 to-blue-900",
-    pdfPath: "/documents/certificates/jpmorgan-forage.pdf",
+    pdfPath: "documents/certificates/jpmorgan-forage.pdf",
     thumbnail: "images/certificates/placeholder.svg",
     verifyUrl: "https://github.com/Maharaja19"
   },
@@ -379,7 +381,7 @@ export const certificationData = [
     date: "2023",
     skills: ["Python", "Problem Solving", "Programming Logic", "Algorithms"],
     theme: "from-amber-600 to-yellow-800",
-    pdfPath: "/documents/certificates/nptel-python.pdf",
+    pdfPath: "documents/certificates/nptel-python.pdf",
     thumbnail: "images/certificates/placeholder.svg",
     achievement: "Elite (Score: 84%)",
     verifyUrl: "https://github.com/Maharaja19"
@@ -393,7 +395,7 @@ export const certificationData = [
     date: "2024",
     skills: ["Generative AI", "Prompt Engineering", "LLMs", "AI Applications"],
     theme: "from-purple-600 to-pink-800",
-    pdfPath: "/documents/certificates/ebpl-genai.pdf",
+    pdfPath: "documents/certificates/ebpl-genai.pdf",
     thumbnail: "images/certificates/placeholder.svg",
     verifyUrl: "https://github.com/Maharaja19"
   },
@@ -406,7 +408,7 @@ export const certificationData = [
     date: "2024",
     skills: ["Computer Science", "Academic Excellence", "Core Engineering"],
     theme: "from-emerald-600 to-teal-800",
-    pdfPath: "/documents/academic/nm-4th-sem.pdf",
+    pdfPath: "documents/academic/nm-4th-sem.pdf",
     thumbnail: "images/certificates/placeholder.svg",
     verifyUrl: "https://github.com/Maharaja19"
   },
@@ -419,7 +421,7 @@ export const certificationData = [
     date: "2025",
     skills: ["Computer Science", "Academic Excellence", "Core Engineering"],
     theme: "from-emerald-600 to-teal-800",
-    pdfPath: "/documents/academic/nm-5th-sem.pdf",
+    pdfPath: "documents/academic/nm-5th-sem.pdf",
     thumbnail: "images/certificates/placeholder.svg",
     verifyUrl: "https://github.com/Maharaja19"
   }
@@ -459,15 +461,15 @@ export const documentRegistry = [
   {
     name: "Curriculum Vitae (Resume)",
     category: "Resume",
-    path: "/documents/resume/Maharaja_resume.pdf",
+    path: "documents/resume/Maharaja_resume.pdf",
     size: "148 KB",
     date: "July 2026",
-    thumbnail: "/images/profile/Maharaja.jpeg"
+    thumbnail: "images/profile/Maharaja.jpeg"
   },
   {
     name: "Bluekode Internship Certificate",
     category: "Internship",
-    path: "/documents/internship/internship-certificate.pdf",
+    path: "documents/internship/internship-certificate.pdf",
     size: "245 KB",
     date: "June 2026",
     thumbnail: "images/certificates/placeholder.svg"
@@ -475,7 +477,7 @@ export const documentRegistry = [
   {
     name: "Bluekode Experience Recommendation Letter",
     category: "Internship",
-    path: "/documents/internship/experience-letter.pdf",
+    path: "documents/internship/experience-letter.pdf",
     size: "285 KB",
     date: "June 2026",
     thumbnail: "images/certificates/placeholder.svg"
@@ -483,7 +485,7 @@ export const documentRegistry = [
   {
     name: "IBM DevOps Fundamentals Certificate",
     category: "Certificates",
-    path: "/documents/certificates/ibm-devops.pdf",
+    path: "documents/certificates/ibm-devops.pdf",
     size: "340 KB",
     date: "2024",
     thumbnail: "images/certificates/placeholder.svg"
@@ -491,7 +493,7 @@ export const documentRegistry = [
   {
     name: "IBM Introduction to Cloud Certificate",
     category: "Certificates",
-    path: "/documents/certificates/ibm-cloud.pdf",
+    path: "documents/certificates/ibm-cloud.pdf",
     size: "320 KB",
     date: "2024",
     thumbnail: "images/certificates/placeholder.svg"
@@ -499,7 +501,7 @@ export const documentRegistry = [
   {
     name: "JPMorgan Software Engineering Simulation",
     category: "Certificates",
-    path: "/documents/certificates/jpmorgan-forage.pdf",
+    path: "documents/certificates/jpmorgan-forage.pdf",
     size: "298 KB",
     date: "2024",
     thumbnail: "images/certificates/placeholder.svg"
@@ -507,7 +509,7 @@ export const documentRegistry = [
   {
     name: "NPTEL Elite Python Certificate",
     category: "Certificates",
-    path: "/documents/certificates/nptel-python.pdf",
+    path: "documents/certificates/nptel-python.pdf",
     size: "512 KB",
     date: "2023",
     thumbnail: "images/certificates/placeholder.svg"
@@ -515,7 +517,7 @@ export const documentRegistry = [
   {
     name: "EBPL Generative AI Internship Certificate",
     category: "Certificates",
-    path: "/documents/certificates/ebpl-genai.pdf",
+    path: "documents/certificates/ebpl-genai.pdf",
     size: "210 KB",
     date: "2024",
     thumbnail: "images/certificates/placeholder.svg"
@@ -523,7 +525,7 @@ export const documentRegistry = [
   {
     name: "GCT 4th Semester Academic Certificate",
     category: "Academic",
-    path: "/documents/academic/nm-4th-sem.pdf",
+    path: "documents/academic/nm-4th-sem.pdf",
     size: "185 KB",
     date: "2024",
     thumbnail: "images/certificates/placeholder.svg"
@@ -531,7 +533,7 @@ export const documentRegistry = [
   {
     name: "GCT 5th Semester Academic Certificate",
     category: "Academic",
-    path: "/documents/academic/nm-5th-sem.pdf",
+    path: "documents/academic/nm-5th-sem.pdf",
     size: "190 KB",
     date: "2025",
     thumbnail: "images/certificates/placeholder.svg"
@@ -539,7 +541,7 @@ export const documentRegistry = [
   {
     name: "DCKAP Incubation Selection Letter",
     category: "Incubation",
-    path: "/documents/achievements/dckap-incubation.pdf",
+    path: "documents/achievements/dckap-incubation.pdf",
     size: "420 KB",
     date: "2024",
     thumbnail: "images/certificates/placeholder.svg"

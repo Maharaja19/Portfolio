@@ -231,7 +231,7 @@ export default function Hero() {
             <div className="absolute bottom-0 left-2 w-[80%] rounded-2xl overflow-hidden glass-card border border-slate-200/50 dark:border-slate-800/80 shadow-2xl p-3 bg-white/70 dark:bg-slate-900/80 backdrop-blur-md transform hover:scale-[1.02] transition-transform duration-300">
               <div className="relative rounded-xl overflow-hidden aspect-[4/4.5] border border-slate-200/20 bg-slate-100 dark:bg-slate-950">
                 <img
-                  src="/images/profile/Maharaja.jpeg"
+                  src="images/profile/Maharaja.jpeg"
                   alt={personalDetails.name}
                   className="w-full h-full object-cover"
                 />
