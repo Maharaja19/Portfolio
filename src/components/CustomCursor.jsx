@@ -1,0 +1,91 @@
+import { useEffect, useState } from 'react';
+import { motion, useMotionValue, useSpring } from 'framer-motion';
+
+export default function CustomCursor() {
+  const [isHovered, setIsHovered] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+
+  const cursorX = useMotionValue(-100);
+  const cursorY = useMotionValue(-100);
+  
+  const springConfig = { damping: 40, stiffness: 400, mass: 0.4 };
+  const cursorXSpring = useSpring(cursorX, springConfig);
+  const cursorYSpring = useSpring(cursorY, springConfig);
+
+  useEffect(() => {
+    const moveCursor = (e) => {
+      cursorX.set(e.clientX);
+      cursorY.set(e.clientY);
+      if (!isVisible) setIsVisible(true);
+    };
+
+    const handleMouseLeave = () => setIsVisible(false);
+    const handleMouseEnter = () => setIsVisible(true);
+
+    window.addEventListener('mousemove', moveCursor);
+    document.addEventListener('mouseleave', handleMouseLeave);
+    document.addEventListener('mouseenter', handleMouseEnter);
+
+    // Track interactive elements hover
+    const addHoverListeners = () => {
+      const interactives = document.querySelectorAll('a, button, [role="button"], input, select, textarea, .interactive-card');
+      interactives.forEach((el) => {
+        el.addEventListener('mouseenter', () => setIsHovered(true));
+        el.addEventListener('mouseleave', () => setIsHovered(false));
+      });
+    };
+
+    // Initial setup
+    addHoverListeners();
+
+    // Re-apply listeners on DOM changes (e.g. navigation, project expansions)
+    const observer = new MutationObserver(addHoverListeners);
+    observer.observe(document.body, { childList: true, subtree: true });
+
+    // Manage html custom cursor active class
+    if (window.innerWidth >= 1024) {
+      document.documentElement.classList.add('custom-cursor-active');
+    }
+
+    return () => {
+      window.removeEventListener('mousemove', moveCursor);
+      document.removeEventListener('mouseleave', handleMouseLeave);
+      document.removeEventListener('mouseenter', handleMouseEnter);
+      observer.disconnect();
+      document.documentElement.classList.remove('custom-cursor-active');
+    };
+  }, [cursorX, cursorY, isVisible]);
+
+  if (!isVisible || window.innerWidth < 1024) return null;
+
+  return (
+    <>
+      {/* Inner dot */}
+      <motion.div
+        className="fixed top-0 left-0 w-2 h-2 bg-indigo-500 rounded-full pointer-events-none z-[9999] mix-blend-difference"
+        style={{
+          x: cursorX,
+          y: cursorY,
+          translateX: '-50%',
+          translateY: '-50%',
+        }}
+      />
+      {/* Outer ring */}
+      <motion.div
+        className="fixed top-0 left-0 w-8 h-8 border border-indigo-500 rounded-full pointer-events-none z-[9998]"
+        animate={{
+          scale: isHovered ? 2 : 1,
+          backgroundColor: isHovered ? 'rgba(99, 102, 241, 0.15)' : 'rgba(99, 102, 241, 0)',
+          borderColor: isHovered ? 'rgb(129, 140, 248)' : 'rgb(99, 102, 241)',
+        }}
+        transition={{ type: 'tween', duration: 0.15 }}
+        style={{
+          x: cursorXSpring,
+          y: cursorYSpring,
+          translateX: '-50%',
+          translateY: '-50%',
+        }}
+      />
+    </>
+  );
+}

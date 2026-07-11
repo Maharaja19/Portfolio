@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply transition-colors duration-300 antialiased font-sans overflow-x-hidden;
+    background-color: rgb(248, 250, 252); /* slate-50 */
+    color: rgb(71, 85, 105); /* slate-600 */
+  }
+
+  body.dark {
+    background-color: rgb(3, 7, 18); /* slate-950 */
+    color: rgb(148, 163, 184); /* slate-400 */
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-100 dark:bg-slate-900;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-slate-300 dark:bg-slate-700 rounded-full hover:bg-slate-400 dark:hover:bg-slate-600 transition-all;
+  }
+
+  /* Text Selection */
+  ::selection {
+    @apply bg-indigo-500/30 text-indigo-900 dark:text-indigo-100;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/70 dark:bg-slate-900/60 backdrop-blur-md border border-slate-200/50 dark:border-slate-800/50 shadow-glass-light dark:shadow-glass-dark transition-all duration-300;
+  }
+
+  .glass-card-hover {
+    @apply hover:border-indigo-500/30 dark:hover:border-indigo-500/30 hover:shadow-neon-indigo hover:-translate-y-1;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 dark:from-indigo-400 dark:via-purple-400 dark:to-pink-400;
+  }
+
+  .text-gradient-emerald {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-emerald-500 to-teal-500 dark:from-emerald-400 dark:to-teal-400;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
+  }
+
+  .btn-primary {
+    @apply relative overflow-hidden px-6 py-3 rounded-xl font-medium text-white bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 shadow-lg shadow-indigo-500/20 dark:shadow-indigo-500/10 hover:shadow-indigo-500/40 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 rounded-xl font-medium border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800/80 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer;
+  }
+}
+
+/* Hide cursor on desktop to support custom trailing cursor */
+@media (min-width: 1024px) {
+  .custom-cursor-active,
+  .custom-cursor-active * {
+    cursor: none !important;
+  }
+}
+
+/* Custom animations and gradient meshes */
+.bg-mesh-light {
+  background-image: 
+    radial-gradient(at 10% 20%, rgba(99, 102, 241, 0.08) 0px, transparent 50%),
+    radial-gradient(at 90% 10%, rgba(16, 185, 129, 0.05) 0px, transparent 50%),
+    radial-gradient(at 50% 80%, rgba(236, 72, 153, 0.08) 0px, transparent 50%);
+}
+
+.bg-mesh-dark {
+  background-image: 
+    radial-gradient(at 10% 20%, rgba(99, 102, 241, 0.15) 0px, transparent 50%),
+    radial-gradient(at 90% 10%, rgba(16, 185, 129, 0.1) 0px, transparent 50%),
+    radial-gradient(at 50% 80%, rgba(236, 72, 153, 0.12) 0px, transparent 50%);
+}
+
+/* Hide default React App.css styles since we are overriding fully */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

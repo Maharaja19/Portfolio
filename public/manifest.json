@@ -1,0 +1,16 @@
+{
+  "short_name": "Maharaja Portfolio",
+  "name": "Maharaja M | Software Engineer Portfolio",
+  "icons": [
+    {
+      "src": "/images/profile/avatar.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#030712",
+  "theme_color": "#4f46e5",
+  "display": "standalone",
+  "orientation": "portrait"
+}
